@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop List</title>
+</head>
+<body>
+    <h1>Shops</h1>
+    {% for shop in shops %}
+        <div>
+            <h2>{{ shop.name }}</h2>
+            <p>{{ shop.description }}</p>
+            <p>Address: {{ shop.address }}</p>
+            <h3>Products:</h3>
+            <ul>
+                {% for product in shop.products.all %}
+                    <li>{{ product.name }} - ${{ product.price }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</body>
+</html>
