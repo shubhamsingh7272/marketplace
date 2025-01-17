@@ -7,7 +7,7 @@ Based on the provided code, here is an API documentation README file for your Dj
 This API provides endpoints for managing shops and products in the marketplace.
 
 ## Base URL
-The base URL for accessing the API is: `http://your-domain.com/`
+The base URL for accessing the API is: `add your own domain cause this is not hosted or you can run it locally on port number 8000`
 
 ## Endpoints
 
